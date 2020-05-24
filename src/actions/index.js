@@ -48,8 +48,8 @@ export function setShowFavourites(val){
     }
 }
 
-export function handleMovieSearch(movie){
-    const url = `http://www.omdbapi.com/?apikey=28eba2fd&t=${movie}` ;
+export function handleMovieSearch(searchText){
+    const url = `http://www.omdbapi.com/?apikey=28eba2fd&t=${searchText}` ;
 
     return function(dispatch){
         fetch(url)
